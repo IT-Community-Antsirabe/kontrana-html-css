@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 16px;
+    --grey: rgb(170, 170, 170);
+    --black: rgb(34, 34, 34);
+    --green: #508c33;
+}
+
+@font-face {
+    font-family: "Neusa";
+    src: url("NeusaNextStdTrial-WideRegular.otf");
+}
+
+@font-face {
+    font-family: "Neusa";
+    src: url("NeusaNextStdTrial-WideBold.otf");
+    font-weight: bold;
+}
+
+
+h1, h2, h3 {
+    font-family: "Neusa", "Sans Serif";
+    color: var(--black);
+}
+
+
+nav {
+    height: 80px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+nav img {
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav .current-page {
+    color: var(--black);
+}
+
+nav ul li{
+    display: inline-block;
+    font-family: 'Nunito';
+    margin-right: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--grey);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--black);
+}
+
+button {
+    border-radius: 40px;
+    height: fit-content;
+    padding: .8rem 1.5rem;
+    font-weight: bold;
+    font-family: 'Nunito';
+    cursor: pointer;
+}
+
+nav button {
+    background-color: transparent;
+    border: 2px solid rgb(185, 185, 185);
+    transition: all 200ms ease;
+}
+
+nav button:hover {
+    background-color: rgb(185, 185, 185);
+    color: white;
+    transition: all 200ms ease;
+}
+
+main button {
+    background-color: var(--green);
+    border: none;
+    color: white;
+}
+
+input::-ms-value {
+    font-family: 'Nunito';
+    font-weight: bold;
+}
+
+main button:hover {
+    background-color: transparent;
+    border: 2px solid var(--green);
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+}
+
+main section > button {
+    margin: 1rem;
+}
+
+main form button {
+    background-color: rgb(51, 51, 51);
+    border-radius: 10px;
+}
+
+main form {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.479);
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px;
+    /* min-width: 80%; */
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input, input:active, input:focus {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 70%;
+    padding: 1rem 1rem;
+    /* flex-grow: ; */
+}
+
+input::placeholder {
+    color: rgb(83, 83, 83);
+    font-weight: bold;
+}
+
+main {
+    text-align: center;
+    font-family: 'Nunito';
+    height: calc(100vh - 80px - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url("bg.jpg") no-repeat;
+    background-size: cover;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px auto;
+    border-radius: 30px;
+    font-weight: bold;
+    max-width: 1000px;
+}
+
+h1 {
+    font-size: 3rem;
+}
